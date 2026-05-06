@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 神谷じんいちろう</title>
+  <meta name="description" content="AIクリエイティブディレクター、AI漫画家、建築士。神谷じんいちろうへの制作依頼、出版相談、講演依頼、コラボのご相談はこちらから。">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* お問い合わせページ専用の追加スタイル */
+    .contact-page {
+      padding: 120px 5% 80px;
+      min-height: calc(100vh - 80px);
+      /* adjusted for footer */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-bg-dark);
+    }
+
+    .contact-form-container {
+      background-color: var(--color-bg-gray);
+      padding: 4rem;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 800px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-form-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-family: var(--font-en);
+      letter-spacing: 0.05em;
+    }
+
+    .contact-form-desc {
+      text-align: center;
+      color: var(--color-text-muted);
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--color-text-light);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: var(--color-text-light);
+      font-family: var(--font-ja);
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-accent-red);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-submit-wrapper {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .btn-submit {
+      width: 100%;
+      max-width: 300px;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem !important;
+    }
+
+    .back-to-home {
+      display: block;
+      margin-top: 2rem;
+      text-align: center;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .back-to-home:hover {
+      color: var(--color-accent-green);
+    }
+
+    @media (max-width: 768px) {
+      .contact-form-container {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" style="text-decoration: none;">J.KAMIYA</a>
+      <nav class="nav">
+        <a href="index.html">ホームに戻る</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <div class="contact-form-container">
+      <h1 class="contact-form-title">CONTACT.</h1>
+      <p class="contact-form-desc">
+        各種ご依頼・ご相談は下記のフォームよりお問い合わせください。<br>
+        内容を確認次第、担当よりご連絡いたします。
+      </p>
+
+      <!-- 
+        FormSubmit.coを利用したHTMLフォーム。
+        action属性をランダムな文字列（セキュリティトークン）に変更し、メールアドレスを保護しています。
+      -->
+      <form action="https://formsubmit.co/775ce75cfaffdf52f4ea12775ff1b313" method="POST">
+        <!-- 自動返信を含める設定（任意） -->
+        <input type="hidden" name="_autoresponse" value="お問い合わせありがとうございます。内容を確認次第ご連絡いたします。">
+        <!-- サンクスページを現在のサイトに戻す場合（ここでは一旦FormSubmit標準の画面を利用） -->
+        <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html"> -->
+        <!-- 件名の設定 -->
+        <input type="hidden" name="_subject" value="【J.KAMIYA PORTFOLIO】Webサイトからのお問い合わせ">
+
+        <div class="form-group">
+          <label for="name" class="form-label">お名前・会社名 <span style="color:var(--color-accent-red)">*</span></label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="例：山田 太郎 / 株式会社〇〇" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">メールアドレス <span style="color:var(--color-accent-red)">*</span></label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="例：your-email@example.com"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="inquiry_type" class="form-label">ご用件</label>
+          <select id="inquiry_type" name="inquiry_type" class="form-control">
+            <option value="制作依頼・出版相談">制作依頼・出版相談</option>
+            <option value="講演依頼・コラボのご相談">講演依頼・コラボのご相談</option>
+            <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">お問い合わせ内容 <span style="color:var(--color-accent-red)">*</span></label>
+          <textarea id="message" name="message" class="form-control" placeholder="ご相談内容や詳細をお書きください" required></textarea>
+        </div>
+
+        <div class="form-submit-wrapper">
+          <button type="submit" class="btn btn-accent-red btn-large btn-submit">送信する</button>
+        </div>
+      </form>
+
+      <a href="index.html" class="back-to-home"><i class="fa-solid fa-arrow-left"></i> ホームへ戻る</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jinichiro Kamiya. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // URLからパラメータを取得し、初期選択状態を設定するスクリプト
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const type = urlParams.get('type');
+      const select = document.getElementById('inquiry_type');
+
+      if (type === 'collab') {
+        select.value = '講演依頼・コラボのご相談';
+      } else if (type === 'production') {
+        select.value = '制作依頼・出版相談';
+      }
+    });
+  </script>
+</body>
+
+</html>
