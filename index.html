@@ -20,15 +20,16 @@
 
 <body>
 
-  <!-- ヘッダーナビゲーション (オプションとして追加・スマホ閲覧時のアクセシビリティ考慮) -->
-  <header class="header">
+  <!-- ヘッダーナビゲーション -->
+  <header class="header" id="header">
     <div class="header-inner">
       <h1 class="logo">J.KAMIYA</h1>
       <nav class="nav">
         <a href="#services">サービス</a>
+        <a href="#pricing">料金</a>
         <a href="#portfolio">ポートフォリオ</a>
         <a href="#story">ストーリー</a>
-        <a href="#contact" class="btn-sm btn-accent-red">問い合わせ</a>
+        <a href="#contact" class="btn btn-sm btn-accent-red">問い合わせ</a>
       </nav>
     </div>
   </header>
@@ -41,8 +42,8 @@
           <span>AIクリエイティブディレクター</span>
           <span>AI漫画家 / 建築士</span>
         </p>
-        <h1 class="hero-main-title">神谷じんいちろう</h1>
-        <h2 class="hero-catchphrase">見せ方を設計するクリエイター</h2>
+        <h2 class="hero-main-title">神谷じんいちろう</h2>
+        <h3 class="hero-catchphrase">見せ方を設計するクリエイター</h3>
 
         <p class="hero-job-tags">
           <span class="tag-item">建築</span> <span class="tag-slash">/</span>
@@ -135,7 +136,7 @@
       <div class="service-cards">
         <!-- Service 1 -->
         <div class="card">
-          <div class="card-icon red-icon">01</div>
+          <div class="card-icon">01</div>
           <h3 class="card-title">AI漫画制作</h3>
           <p class="card-desc">企業・個人向けにAI漫画制作を行っています。</p>
           <ul class="card-list">
@@ -150,7 +151,7 @@
 
         <!-- Service 2 -->
         <div class="card">
-          <div class="card-icon green-icon">02</div>
+          <div class="card-icon">02</div>
           <h3 class="card-title">出版プロデュース</h3>
           <p class="card-desc">書籍企画から出版戦略まで出版プロジェクトを設計します。</p>
           <ul class="card-list">
@@ -163,7 +164,7 @@
 
         <!-- Service 3 -->
         <div class="card">
-          <div class="card-icon red-icon">03</div>
+          <div class="card-icon">03</div>
           <h3 class="card-title">出版代行</h3>
           <p class="card-desc">電子書籍出版を企画から出版までサポート。</p>
           <ul class="card-list">
@@ -173,6 +174,47 @@
             <li>出版手続き</li>
             <li>ランキング戦略</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金セクション -->
+  <section class="pricing" id="pricing">
+    <div class="container view-anim">
+      <h2 class="section-title text-center">PRICING.</h2>
+      <p class="pricing-lead text-center">お試し依頼OK</p>
+
+      <!-- お試し料金カード -->
+      <div class="pricing-main-card">
+        <div class="pricing-main-header">お試しプラン</div>
+        <div class="pricing-main-body">
+          <span class="pricing-label">1ページ</span>
+          <span class="pricing-value">1,500</span>
+          <span class="pricing-unit">円</span>
+        </div>
+        <p class="plan-note" style="padding: 0 2rem 2rem; margin: 0;">※3ページ分</p>
+      </div>
+
+      <!-- 料金プラン -->
+      <div class="pricing-plans">
+        <!-- 基本 -->
+        <div class="pricing-plan-card">
+          <div class="plan-badge plan-badge-standard">基本</div>
+          <div class="plan-price">
+            <span class="plan-price-value">5,000</span>
+            <span class="plan-price-unit">円〜 / 1ページ</span>
+          </div>
+        </div>
+
+        <!-- 本制作 -->
+        <div class="pricing-plan-card plan-featured">
+          <div class="plan-badge plan-badge-premium">本制作</div>
+          <div class="plan-price">
+            <span class="plan-price-value">500,000</span>
+            <span class="plan-price-unit">円</span>
+          </div>
+          <p class="plan-note">※150ページ程度</p>
         </div>
       </div>
     </div>
@@ -213,11 +255,11 @@
 
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-num accent-red">1,000,000<span class="unit">DL</span></div>
+          <div class="stat-num">1,000,000<span class="unit">DL</span></div>
           <div class="stat-label">漫画出版 ダウンロード達成</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num accent-green">No.1</div>
+          <div class="stat-num">No.1</div>
           <div class="stat-label">Amazon電子書籍 ベストセラー</div>
         </div>
         <div class="stat-item">
@@ -270,7 +312,7 @@
 
           <div style="margin-top: 2rem;">
             <p class="story-highlight"
-              style="font-size: 1.2rem !important; margin-bottom: 0.5rem; color: var(--color-accent-green) !important; border-bottom: none;">
+              style="font-size: 1.2rem !important; margin-bottom: 0.5rem; color: var(--color-accent-primary) !important; border-bottom: none;">
               日本</p>
             <p>
               <strong>2024年以前</strong><br>
@@ -280,7 +322,7 @@
 
           <div style="margin-top: 2rem;">
             <p class="story-highlight"
-              style="font-size: 1.2rem !important; margin-bottom: 0.5rem; color: var(--color-accent-red) !important; border-bottom: none;">
+              style="font-size: 1.2rem !important; margin-bottom: 0.5rem; color: var(--color-accent-secondary) !important; border-bottom: none;">
               カナダ</p>
             <p>
               <strong>2025年</strong><br>
@@ -319,9 +361,16 @@
         </div>
 
         <div class="contact-buttons">
-          <a href="contact.html?type=production" class="btn btn-accent-red btn-large">制作依頼・出版相談はこちら</a>
-          <a href="contact.html?type=collab" class="btn btn-outline btn-large">講演依頼・コラボのご相談</a>
+          <a href="https://forms.gle/8VF38crcCx9NTqxe6" target="_blank" rel="noopener noreferrer"
+            class="btn btn-accent-red btn-large">お問い合わせはこちら</a>
         </div>
+
+        <p class="contact-desc text-center" style="margin-top: 2rem;">
+          または<br>
+          以下のメールアドレスまでご連絡ください。<br>
+          <a href="mailto:jinichirokamiya@gmail.com"
+            style="font-weight: 700; color: var(--color-accent-primary);">jinichirokamiya@gmail.com</a>
+        </p>
 
         <div class="sns-links">
           <a href="https://x.com/jinichirokamiya" target="_blank" rel="noopener noreferrer" class="sns-icon"
